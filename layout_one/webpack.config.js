@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    publicPath: "http://localhost:3000/",
+    publicPath: "http://localhost:3003/",
   },
 
   resolve: {
@@ -12,7 +12,7 @@ module.exports = {
   },
 
   devServer: {
-    port: 3000,
+    port: 3003,
     historyApiFallback: true,
   },
 
@@ -41,12 +41,12 @@ module.exports = {
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "shell",
+      name: "layout_one",
       filename: "remoteEntry.js",
-      remotes: {
-        "main": "main@http://localhost:3002/remoteEntry.js"
+      remotes: {},
+      exposes: {
+        "./LayoutOne": "./src/LayoutOne.jsx"
       },
-      exposes: {},
       shared: {
         ...deps,
         react: {

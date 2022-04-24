@@ -3,12 +3,11 @@ import ReactDOM from "react-dom";
 
 import "./index.css";
 
+import Header from "./components/Header";
+
 const App = () => (
-  <div className="container">
-    <div>Name: shared</div>
-    <div>Framework: react</div>
-    <div>Language: JavaScript</div>
-    <div>CSS: Empty CSS</div>
-  </div>
+    <div className="container">
+        <Header />
+    </div>
 );
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<App/>, document.getElementById("app"));

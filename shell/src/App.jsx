@@ -1,21 +1,6 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
+import MainLayout from "main/MainLayout";
 
-import "./index.css";
-
-const App = () => (
-  <>
-    <div className="header">
-      I AM HEADER
-    </div>
-    <div className="container">
-      <div className="sidepanel">
-        SIDE PANEL
-      </div>
-      <div className="layout">
-        Layout
-      </div>
-    </div>
-  </>
-);
+const App = () => <MainLayout />;
 ReactDOM.render(<App />, document.getElementById("app"));
