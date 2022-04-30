@@ -70,6 +70,7 @@ module.exports = {
         },
         "@emotion/react": {
           singleton: true,
+          requiredVersion: deps["@emotion/react"],
         },
         "@emotion/styled": {
           singleton: true,

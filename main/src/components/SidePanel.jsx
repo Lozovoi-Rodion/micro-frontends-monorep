@@ -18,10 +18,7 @@ export default function SidePanel() {
             aria-label="Vertical tabs example"
             sx={{borderRight: 1, borderColor: "divider"}}
         >
-        
-            <Tab value={value} index={2}>
-                Third tab
-            </Tab>
+            <Tab value={value} index={2} label="Third tab"/>
         </Tabs>
     );
 }

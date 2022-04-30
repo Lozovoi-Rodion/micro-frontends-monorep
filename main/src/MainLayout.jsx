@@ -5,6 +5,7 @@ import ErrorBoundary from "./ErrorBoundary";
 const LayoutOne = React.lazy(() => import("layout_one/LayoutOne"));
 const LayoutTwo = React.lazy(() => import("layout_two/LayoutTwo"));
 import Header from "./components/Header";
+import SidePanel from "./components/SidePanel";
 
 const renderMFE = (MFE) => {
   return (
@@ -21,7 +22,9 @@ export default function MainLayout() {
     <>
       <Header />
       <div className="container">
-        <div className="sidepanel">SIDE PANEL</div>
+        <div className="sidepanel">
+          <SidePanel />
+        </div>
         <div className="layout">
           <Routes>
             <Route exact path="/" element={renderMFE(LayoutOne)} />
