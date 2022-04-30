@@ -18,11 +18,9 @@ body {
 .layout {
   width: 80%;
   height: 100%;
-  border: 1px solid red
 }
 
 .sidepanel {
   width: 20%;
   height: 100%;
-  border: 1px solid green;
 }

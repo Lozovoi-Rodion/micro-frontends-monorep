@@ -41,12 +41,10 @@ module.exports = {
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "shared",
+      name: "auth",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {
-        "./Header": "./src/components/Header.jsx",
-      },
+      exposes: {},
       shared: {
         ...deps,
         react: {
