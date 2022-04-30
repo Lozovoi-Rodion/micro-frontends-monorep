@@ -57,6 +57,21 @@ module.exports = {
           singleton: true,
           requiredVersion: deps["react-dom"],
         },
+        "react-jss": {
+          singleton: true
+        },
+        "react-router-dom": {
+          singleton: true,
+        },
+         "@mui/material": {
+          singleton: true,
+        },
+        "@emotion/react": {
+          singleton: true,
+        },
+        "@emotion/styled": {
+          singleton: true,
+        },
       },
     }),
     new HtmlWebPackPlugin({

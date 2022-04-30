@@ -44,9 +44,11 @@ module.exports = {
       name: "shell",
       filename: "remoteEntry.js",
       remotes: {
-        "main": "main@http://localhost:3002/remoteEntry.js"
+        main: "main@http://localhost:3002/remoteEntry.js",
       },
-      exposes: {},
+      exposes: {
+        "./auth.js": "./src/lib/auth.js",
+      },
       shared: {
         ...deps,
         react: {
@@ -56,6 +58,21 @@ module.exports = {
         "react-dom": {
           singleton: true,
           requiredVersion: deps["react-dom"],
+        },
+        "react-jss": {
+          singleton: true
+        },
+        "react-router-dom": {
+          singleton: true,
+        },
+         "@mui/material": {
+          singleton: true,
+        },
+        "@emotion/react": {
+          singleton: true,
+        },
+        "@emotion/styled": {
+          singleton: true,
         },
       },
     }),
