@@ -18,7 +18,7 @@ function useRouteMatch(patterns) {
 }
 
 export default function SidePanel() {
-  const routeMatch = useRouteMatch(["/", "/layout-two"]);
+  const routeMatch = useRouteMatch(["/", "/layout-one", "/layout-two"]);
   const currentTab = routeMatch?.pattern?.path;
 
   return (
@@ -29,6 +29,7 @@ export default function SidePanel() {
       textColor="secondary"
     >
       <Tab value="/" label="Home" to="/" component={Link} />
+      <Tab value="/layout-one" label="Micro Frontend 1" to="/layout-one" component={Link} />
       <Tab value="/layout-two" label="Micro Frontend 2" to="/layout-two" component={Link} />
     </Tabs>
   );
