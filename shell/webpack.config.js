@@ -47,7 +47,7 @@ module.exports = {
         main: "main@http://localhost:3002/remoteEntry.js",
       },
       exposes: {
-        "./auth.js": "./src/lib/auth.js",
+        "./auth": "./src/lib/auth.js",
       },
       shared: {
         ...deps,

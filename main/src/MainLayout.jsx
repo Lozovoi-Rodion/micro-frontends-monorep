@@ -19,6 +19,7 @@ const renderMFE = (MFE) => {
 };
 
 export default function MainLayout() {
+ 
   return (
     <>
       <Header />

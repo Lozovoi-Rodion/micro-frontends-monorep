@@ -44,7 +44,7 @@ module.exports = {
       name: "auth",
       filename: "remoteEntry.js",
       remotes: {
-        auth: "auth@http://localhost:3001/remoteEntry.js",
+        shell: "shell@http://localhost:3000/remoteEntry.js",
       },
       exposes: {
         "./Auth": "./src/Auth.jsx",

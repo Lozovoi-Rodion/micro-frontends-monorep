@@ -44,6 +44,7 @@ module.exports = {
       name: "main",
       filename: "remoteEntry.js",
       remotes: {
+        shell: "shell@http://localhost:3000/remoteEntry.js",
         auth: "auth@http://localhost:3001/remoteEntry.js",
         layout_one: "layout_one@http://localhost:3003/remoteEntry.js",
         layout_two: "layout_two@http://localhost:3004/remoteEntry.js",
